@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+    <h2>Login Form</h2>
+    <form action="/login" method="post">
+        <p>Enter Name:</p>
+        <p><input type="text" name="nm" required /></p>
+        <p><input type="submit" value="Submit" /></p>
+    </form>
+
+    <p>Or try with GET (e.g. <a href="/login?nm=John">/login?nm=John</a>):</p>
+    <form action="/login" method="get">
+        <p><input type="text" name="nm" placeholder="Name for GET" /></p>
+        <p><input type="submit" value="Send via GET" /></p>
+    </form>
+</body>
+</html>
